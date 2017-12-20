@@ -3,7 +3,7 @@
 ---
 .navbar{
     height: 80px;
-    background-color: white;
+    background-color: rgba(#fff, 0.3);
     .navbar-brand{
         margin-left: 0px !important;
         padding-top: 30px !important;
@@ -19,8 +19,13 @@
             a{
                 padding-top: 30px !important;
                 padding-bottom: 30px !important;
-                font-size: 20px;
-                color: black;
+                font-size: 18px;
+                font-weight: lighter;
+                color: #666;
+            }
+            :hover {
+                background-color:#79ffcb;
+                color: #000;
             }
         }
     }
