@@ -7,24 +7,28 @@
     .avatar{
         background-position: center !important;
         background-size: cover !important; 
-        transition: 0.1s;
-        background-color: #ffffff70 !important;
+        transition: 0.5s;
+        background-color: #ffffff35 !important;
         background-blend-mode: overlay;
         .text{
             position: absolute;
-            padding: 0 10px;
+            padding: 0px 10px;
+            margin: 80px auto;
             color: white;
             display: none;
-            font-size: 2rem;
-            background-color: black;
-            transition: 5s;   
-            right:0px;
-            bottom:0px;
+            
+            font-size: 1.8rem;
+            background-color: rgba(#79ffcb, 0.8);
+            transition: 0.5s; 
+            
+            // right:0px;
+            // bottom:0px;
+            
         }
     }
     .avatar:hover{
         background-color:transparent !important;
-        .text{
+        .text{            
             display: block;
         }
     }
