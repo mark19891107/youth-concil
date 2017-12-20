@@ -1,0 +1,24 @@
+<section class="home-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="">
+                    <img src="/images/avatars/青諮會.jpg" style="width:100%; height: 100%">
+                </a>
+                <h2>行政院青年諮詢委員會</h2>
+                <p>行政院為強化青年公共參與及溝通機制，提供青年於政府政策形成中之參與管道，於105年11月1日成立青年諮詢委員會。委員共30人，由行政院院長兼任召集人；副召集人2人，1人由行政院院長指派唐政務委員鳳兼任，1人由青年代表相互推選黃委員敬峰擔任；執行長由教育部部長兼任之，其餘委員包含勞動部部長、經濟部部長及青年代表25人。</p>
+            </div>
+            <div class="col-sm-8">
+                {% for avatar in site.data.avatars %}
+                <div class=" col-md-2 col-sm-3 col-xs-4 avatar-back">
+                    <a href="/user/黃薇齊">
+                        <div class="avatar" style="width:100%; background:url({{avatar.url}});padding-bottom:100%">
+                            <div class="text">{{avatar.name}}</div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

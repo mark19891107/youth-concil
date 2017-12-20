@@ -1,0 +1,42 @@
+---
+
+---
+
+.home-title{
+    margin-bottom: 50px;
+    .avatar{
+        background-position: center !important;
+        background-size: cover !important; 
+        transition: 0.3s;
+        background-color: #ffffff90 !important;
+        background-blend-mode: overlay;
+        .text{
+            position: absolute;
+            padding: 0 10px;
+            color: white;
+            display: none;
+            font-size: 2rem;
+            background-color: black;
+            transition: 5s;   
+            right:0px;
+            bottom:0px;
+        }
+    }
+    .avatar:hover{
+        background-color:transparent !important;
+        .text{
+            display: block;
+        }
+    }
+    .avatar-back{
+        padding: 5px !important;
+        a{
+            text-decoration: none;
+        }
+    }
+    p{
+        line-height: 24px;
+        text-align: justify;    
+    }    
+}
+
