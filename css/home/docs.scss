@@ -4,6 +4,14 @@
     .headline {
         text-align: center;
         padding: 50px;
+        span{
+            background: none;
+            font-size: 30px;
+        }
+    }
+
+    .headline:before{
+        border: 0px;
     }
     margin-bottom: 100px;
     .panel {
@@ -27,8 +35,4 @@
     a:hover {
         text-decoration: none;
     }
-<<<<<<< HEAD
-}
-=======
->>>>>>> 31b1df3338ccece9dfd696d50a0866431bb59694
 }
