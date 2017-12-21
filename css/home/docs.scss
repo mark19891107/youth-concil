@@ -7,12 +7,12 @@
         
     }
     margin-bottom: 100px;
-}
+
 
 .panel{
     text-align: center;
     color: black;
-    
+    background-color: rgba(#eee, 0.20);
     border-radius: 0px;
     
 
@@ -23,7 +23,7 @@
         }   
     }
     &:hover{
-        background-color: rgba(#333, 0.05);
+        background-color: white;
         h3{
             color: black;
         }
