@@ -1,20 +1,25 @@
 ---
 ---
 .fields{
-    background-color: #79ffcb;
+    // background-color: #79ffcb;
+    background: linear-gradient( #79ffcb 0%, white 50% , #79ffcb 100%);
     margin-bottom: 100px;
     padding-bottom: 100px;
 
     .headline{
         text-align: center;
         padding: 50px;
+
+        span{
+            background: none;
+        }
     }
     
     #cloudtag{
-        border-radius: 30px;
+        // border-radius: 30px;
         padding: 50px;
         margin: 0px 200px;
-        background-color: #ffffff;
+        // background-color: #ffffff;
         text-align: center;
         .bubble{
             max-width: 700px;
