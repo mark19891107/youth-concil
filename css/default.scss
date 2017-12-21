@@ -1,0 +1,23 @@
+---
+---
+.headline:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+.headline {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 24px;
+    // text-align: center;
+}
+.headline > span {
+    display: inline-block;
+    position: relative;
+    background: white;
+    padding-right: 15px;
+}
