@@ -4,6 +4,7 @@
     .headline{
         text-align: center;
         padding: 50px;
+        
     }
     margin-bottom: 100px;
 }
@@ -11,5 +12,24 @@
 .panel{
     text-align: center;
     color: black;
+    
     border-radius: 0px;
+    
+
+    .panel-body{
+        h3{
+            color: #666;
+            font-weight: normal;
+        }   
+    }
+    &:hover{
+        background-color: rgba(#333, 0.05);
+        h3{
+            color: black;
+        }
+    }
+}
+
+a:hover{
+    text-decoration: none;
 }
