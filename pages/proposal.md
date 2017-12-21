@@ -1,0 +1,4 @@
+---
+layout: proposal
+permalink: /proposal/
+---
