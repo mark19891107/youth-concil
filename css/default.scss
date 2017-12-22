@@ -21,3 +21,18 @@
     background: white;
     padding-right: 15px;
 }
+
+.modal{
+    .modal-header{
+        border-bottom: 0
+    }
+    .modal-footer{
+        border-top: 0
+    }
+    .close{
+        span{
+            font-size: 40px;
+            padding-right: 10px;
+        }
+    }
+}

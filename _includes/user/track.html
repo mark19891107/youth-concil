@@ -26,9 +26,9 @@
         <div class="col-md-12">
             <ul class="timeline">
                 <li>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-toggle="modal" data-target="#meeting-Modal">
                         <div class="timeline-body">
-                            <h4>行政院青年諮詢委員會第4次會議</h4>
+                            <h4>行政院青年諮詢委員會第3次會議</h4>
                         </div>
                         <div class="timeline-footer">
                             <a class="pull-right">
@@ -57,11 +57,11 @@
                 <li class="timeline-inverted">
                     <div class="timeline-panel">
                         <div class="timeline-body">
-                            <h4>行政院青年諮詢委員會第3次會議</h4>
+                            <h4>農夫市集即將開跑</h4>
                         </div>
                         <div class="timeline-footer">
                             <a class="pull-right">
-                                <span class="label label-success">防救災</span>
+                                <span class="label label-warning">社會企業</span>
                             </a>
                         </div>
                     </div>
@@ -190,11 +190,11 @@
                         </div>
                     </div>
                 </li>
-
-
-
                 <li class="clearfix" style="float: none;"></li>
             </ul>
         </div>
     </div>
 </section>
+
+<link rel="stylesheet" href="/css/meeting-page/meeting-modal.css">
+{% include meeting-page/meeting-modal.html %}
