@@ -18,6 +18,7 @@
     }
     h4 {
         margin: 15px;
+        line-height: inherit;
     }
     .timeline {
         list-style: none;
@@ -58,6 +59,7 @@
                 clear: both;
             }
             >.timeline-panel {
+                cursor: pointer;
                 width: 80%;
                 margin-right: 20%;
                 float: left;
@@ -163,15 +165,13 @@
                 float: left;
                 clear: left;
                 > {
-                    .timeline-panel {
-                        width: 100%;
-                    }
                     .timeline-badge {
                         left: 28px;
                         margin-left: 0;
                         top: 16px;
                     }
                     .timeline-panel {
+                        width: 100%;
                         float: right;
                         margin-right: 0;
                         &:before {
@@ -201,6 +201,9 @@
         }
         .timeline-inverted .avatars {
             margin-left: 0% !important;
+        }
+        .timeline-date {
+            margin-right: 0% !important;
         }
     }
 }
