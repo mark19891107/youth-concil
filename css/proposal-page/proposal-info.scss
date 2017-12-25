@@ -10,4 +10,36 @@
             margin-left: 20px;
         }
     }
+
+    
+}
+
+/* green123:#79ffcb #59C7BD #16a598 red: B23A00 yellow: FFA83A */
+
+.progress {
+    /* 政策駁回 */
+    .progress-bar-danger{
+        background-color: #B23A00;
+    }
+
+
+    /* 完全採納 */
+    .progress-bar-success{
+        background-color: #16a598;
+    }
+
+    /* 部分採納 */
+    .progress-bar-warning{
+        background-color: #59C7BD;
+    }
+
+    /* 進行中 */
+    .progress-bar-default{
+        background-color: #59C7BD;
+    }
+
+    /* 研議中 */
+    .progress-bar-yellow{
+        background-color: #FFA83A;
+    }
 }
