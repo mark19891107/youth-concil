@@ -2,7 +2,7 @@
 --- 
 .navbar {
     height: 80px;
-    background-color: rgba(#fff, 0.3);
+    background-color: rgba(#fff, 0.5);
     .navbar-brand {
         margin-left: 0px !important;
         padding-top: 30px !important;
@@ -20,15 +20,48 @@
                 padding-bottom: 30px !important;
                 font-size: 18px;
                 font-weight: lighter;
-                color: #666;
+                color: #222;
             }
              :hover {
-                background-color: #59C7BD;
+                background-color: #222;
                 /*#79ffcb #59C7BD #16a598*/
+                color: #fff;
+            }
+            .dropdown-menu {
+                background-color: white;
                 color: #000;
+                 :hover {
+                    background-color: white;
+                    color: #000;
+                }
+            }
+            .menu-user-widget-signin {
+                .btn-primary {
+                    background-color: #222;
+                    &:hover {
+                        color: white;
+                    }
+                }
+                .menu-user-widget-sigin-form {
+                    .btn-primary {
+                        background-image: linear-gradient(to bottom, #444 0, #222 100%);
+                    }
+                    .menu-user-widget-signin-btn {
+                        background-color: #222;
+                         :hover {
+                            background-color: #222;
+                        }
+                    }
+                }
+            }
+            .open {
+                 :hover {
+                    color: black;
+                }
             }
         }
     }
+
     .icon-bar {
         background-color: black;
     }
@@ -46,10 +79,14 @@
                     background-color: white;
                     border-top: solid 1px #eee;
                 }
-                &:nth-child(2) a{
+                &:nth-child(2) a {
                     border-bottom: solid 1px #eee;
                 }
             }
+        }
+        .navbar-toggle {
+            margin-top: 25px;
+            margin-bottom: 10px;
         }
     }
 }

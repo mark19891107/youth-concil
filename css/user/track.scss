@@ -63,12 +63,16 @@
                 width: 80%;
                 margin-right: 20%;
                 float: left;
-                border: 1px solid #d4d4d4;
+                border: 0px solid #d4d4d4;
                 margin-bottom: 10px;
                 /*border-radius: 2px;*/
                 /*padding: 20px;*/
                 position: relative;
-                background-color: #d8d8d8;
+                background-color: #eeeeee;
+
+                &:hover{
+                    background-color: #ccc;
+                }
             }
             &.timeline-inverted>.timeline-panel {
                 float: right;
@@ -96,6 +100,8 @@
                     }
                 }
             }
+
+            
         }
     }
     .timeline-body> {
@@ -143,11 +149,23 @@
             display: inline-block;
         }
     }
-    .label {
+    .label {        
         font-weight: 400;
         font-size: 100%;
         border-radius: 0px;
         margin-left: 5px;
+    }
+
+    .label-danger{
+        background-color: #B23A00;
+    }
+
+    .label-warning{
+        background-color: #FFA83A;
+    }
+
+    .label-success{
+        background-color: #16a598;
     }
 }
 
