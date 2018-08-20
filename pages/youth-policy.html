@@ -1,0 +1,98 @@
+--- 
+layout: default 
+permalink: /youth-policy/ 
+---
+
+<style>
+    @media only screen and (max-width: 720px) {
+        /* Force table to not be like tables anymore */
+        .break-table {
+            background-color: transparent !important;
+        }
+        .break-table,
+        .break-table thead,
+        .break-table tbody,
+        .break-table th,
+        .break-table td,
+        .break-table tr {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        .break-table thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        .break-table tr {
+            border-top: 5px solid #ddd;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+        }
+
+        .break-table td {
+            /* Behave  like a "row" */
+            border: none !important;
+            border-bottom: 1px solid #eee !important;
+            position: relative;
+            padding-left: 35% !important;
+            white-space: normal;
+            text-align: left;
+        }
+
+        .break-table td:last-child {
+            /* Behave  like a "row" */
+            border: none !important;
+        }
+
+        .break-table td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 30%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .break-table td:before {
+            content: attr(data-title);
+        }
+    }
+</style>
+
+<div class="container text-center" id="youth-policy">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>青年政見追蹤事項各機關辦理情形摘要表</h1>
+            <table class="break-table table text-left">
+                <thead>
+                    <tr class="table-success">
+                        <th style="width:50px">案號</th>
+                        <th style="width:150px">政策議題</th>
+                        <th style="width:200px">應辦事項</th>
+                        <th style="width:100px">主辦機關</th>
+                        <th style="width:100px">協辦機關</th>
+                        <th>辦理(執行)情形</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for policy in site.data.youth-policy %}
+                    <tr>
+                        <td data-title="案號">{{policy.id}}</td>
+                        <td data-title="政策議題">{{policy.policy}}</td>
+                        <td data-title="應辦事項">{{policy.title}}</td>
+                        <td data-title="主辦機關">{{policy.primary_agent}}</td>
+                        <td data-title="協辦機關">{{policy.other_agent}}</td>
+                        <td data-title="辦理(執行)情形">{{policy.content}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
